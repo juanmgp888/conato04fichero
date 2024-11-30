@@ -13,15 +13,15 @@ public class LecturaFichero {
             // su código en formato entero (int).
             // El constructor (ver API) lanza una excepción FileNotFoundException,
             // pero el método 'read' lanza una de tipo IOException.
-            // Nos quedaremos con esta última (dentro del catch) que engloba a ambas. Superclase.
-            int caracterLeido;// = entrada.read(); Sobra esta parte derecha, porque leería el primer caracter sin pasar por el bucle y ser visualizado
+            // Nos quedaremos con esta última  que engloba a ambas. Superclase.
+            int caracterLeido=0; // La inicializamos para que el while no de error
 
             // Un fichero de caracteres terminará cuando aperezca un valor -1
-            do {
+            while (caracterLeido!=-1) {
                 caracterLeido=entrada.read();
                 char letra = (char) caracterLeido; // casting para pasar el código a unicode.
                 System.out.print(letra);
-            } while (caracterLeido!=-1); // Lo pongo que do while, pq para evaluar la condición, la variable ha tenido que ser inicializada
+            } 
             entrada.close();
 
         } catch (IOException e) {

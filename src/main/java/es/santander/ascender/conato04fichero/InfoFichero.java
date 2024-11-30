@@ -46,9 +46,4 @@ public class InfoFichero {
             } else
                 System.out.println("-File does not exist");
         }
-
-        public static void main() {
-            // TODO Auto-generated method stub
-            throw new UnsupportedOperationException("Unimplemented method 'main'");
-        }
 }

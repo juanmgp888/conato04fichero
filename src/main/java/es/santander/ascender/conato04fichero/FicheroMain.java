@@ -10,6 +10,9 @@ public class FicheroMain {
             
             // Llamar al método lee() de LecturaFichero para leer el contenido del archivo
             LecturaFichero.lee();
+            EscrituraFichero.escribe();
+            AgregadoAFichero.agrega();
+
         } catch (IOException e) {
             // Manejo de la excepción IOException
             System.out.println("Se produjo un error al leer el archivo: " + e.getMessage());
